@@ -1,0 +1,8 @@
+.shop {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  justify-items: center;
+  background-color: #f9f9f9;
+}

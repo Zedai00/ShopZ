@@ -1,0 +1,172 @@
+.card {
+  width: 100%;
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  background-color: white;
+  gap: 10px;
+}
+
+.product-img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-title {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.3rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bottom-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card-price {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.quantity-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.quantity-control button {
+  background-color: #222;
+  color: white;
+  border: none;
+  padding: 0.3rem 0.7rem;
+  font-size: 1rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.quantity-control input {
+  width: 3rem;
+  text-align: center;
+  padding: 0.2rem;
+  font-size: 1rem;
+}
+
+.card button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.card button:hover {
+  background-color: #0056b3;
+}
+
+.cart-extras {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid #ddd;
+}
+
+.cart-qty,
+.cart-total {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.remove-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.remove-btn:hover {
+  background-color: #b02a37;
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: 0.8rem;
+    gap: 8px;
+    max-width: 350px;
+  }
+
+  .product-img {
+    aspect-ratio: 4 / 3;
+  }
+
+  .card-title {
+    font-size: 0.95rem;
+  }
+
+  .card-price {
+    font-size: 1rem;
+  }
+
+  .quantity-control {
+    gap: 0.3rem;
+  }
+
+  .quantity-control button,
+  .card button,
+  .remove-btn {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.6rem;
+  }
+
+  .quantity-control input {
+    width: 2.5rem;
+    font-size: 0.9rem;
+  }
+
+  .cart-qty,
+  .cart-total {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 0.6rem;
+    max-width: max-content;
+  }
+
+  .product-img {
+    aspect-ratio: 4 / 3;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+}
