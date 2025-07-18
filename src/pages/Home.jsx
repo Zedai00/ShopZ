@@ -42,7 +42,7 @@ const Home = () => {
       <section className="about">
         <h2>About Us</h2>
         <p>
-          ShopZ is a student-built e-commerce site focused on delivering a fast,
+          ShopZ is a e-commerce site focused on delivering a fast,
           simple, and secure shopping experience — made with React ❤️.
         </p>
       </section>
