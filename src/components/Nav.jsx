@@ -4,7 +4,7 @@ import '../styles/Nav.css';
 const Nav = ({ cart }) => {
   return (
     <header className="navbar">
-      <h1>ShopZ</h1>
+      <h1><Link to="/">ShopZ</Link></h1>
       <nav className="links">
         <Link to="/">Home</Link>
         <Link to="/shop">Shop</Link>
@@ -13,7 +13,7 @@ const Nav = ({ cart }) => {
           <span className="cart-count">{cart.length}</span>
         </Link>
       </nav>
-    </header>
+    </header >
   );
 };
 
